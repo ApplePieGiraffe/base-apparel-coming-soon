@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png"> 
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Frontend Mentor | Base Apparel Coming Soon</title>
+</head>
+<body>
+    <div class="main-wrapper">
+        <header class="header">
+            <img src="./img/logo.svg" alt="logo" class="header__logo">
+        </header>
+    
+        <picture class="picture">
+            <source media="(max-width: 799px)" srcset="./img/hero-mobile.jpg">
+            <source media="(min-width: 800px)" srcset="./img/hero-desktop.jpg">
+            <img src="./img/hero-desktop.jpg" alt="female model">
+        </picture>
+    
+        <main class="content">
+            <div class="content-wrapper">
+                <h1 class="main-heading"><span class="main-heading--pink">We're</span> coming soon</h1>
+    
+                <form class="form">
+                    <label for="email" class="paragraph">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</label>
+    
+                    <div class="input-wrapper">
+                        <input required type="email" name="email" id="email" placeholder="Email Address" class="email-input">
+                        <img src="./img/icon-error.svg" alt="error icon" class="icon-error">
+                        <span class="error-text">Please provide a valid email</span>
+                        
+                        <button class="btn">
+                            <svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><title>Chevron Forward</title><path fill='none' stroke='#fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='48' d='M184 112l144 144-144 144'/></svg>
+                        </button>
+                    </div>
+                </form>
+
+                <p class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/ApplePieGiraffe" target="_blank">ApplePieGiraffe</a>.</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
