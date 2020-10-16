@@ -21,6 +21,15 @@ html {
 
 // LAYOUT
 
+body {
+    @media only screen and (min-width: 800px) {
+        min-height: 100vh;
+        background: url(../img/bg-pattern-desktop.svg), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+    }
+}
+
 .main-wrapper {
     display: grid;
     grid-template-columns: auto;
@@ -102,6 +111,7 @@ html {
         grid-row: 2 / 3;
         margin-top: 9rem;
         margin-right: 5rem;
+        background: none;
     }
 }
 
